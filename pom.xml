@@ -1,0 +1,56 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.jenkins-ci.plugins</groupId>
+    <artifactId>plugin</artifactId>
+    <version>2.9</version>
+  </parent>
+
+  <properties>
+    <jenkins.version>1.580.1</jenkins.version>
+    <java.level>6</java.level>
+    <findbugs.failOnError>false</findbugs.failOnError>
+  </properties>
+
+  <artifactId>TestComplete</artifactId>
+  <name>TestComplete support plug-in</name>
+  <version>1.12-SNAPSHOT</version>
+  <packaging>hpi</packaging>
+  <url>http://wiki.jenkins-ci.org/display/JENKINS/TestComplete+Support+Plugin</url>
+  <licenses>
+    <license>
+      <name>MIT license</name>
+      <comments>All source code is under the MIT license.</comments>
+    </license>
+  </licenses>
+
+  <repositories>
+    <repository>
+      <id>repo.jenkins-ci.org</id>
+      <url>http://repo.jenkins-ci.org/public/</url>
+    </repository>
+  </repositories>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.jenkins-ci.plugins</groupId>
+      <artifactId>junit</artifactId>
+      <version>1.19</version>
+    </dependency>
+  </dependencies>
+
+  <scm>
+    <connection>scm:git:git://github.com/jenkinsci/testcomplete-plugin.git</connection>
+    <developerConnection>scm:git:git@github.com:jenkinsci/testcomplete-plugin.git</developerConnection>
+    <url>http://github.com/jenkinsci/testcomplete-plugin</url>
+    <tag>HEAD</tag>
+  </scm>
+
+  <pluginRepositories>
+    <pluginRepository>
+      <id>repo.jenkins-ci.org</id>
+      <url>http://repo.jenkins-ci.org/public/</url>
+    </pluginRepository>
+  </pluginRepositories>
+
+</project>
