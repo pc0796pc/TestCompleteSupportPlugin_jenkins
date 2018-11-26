@@ -29,6 +29,7 @@ import java.util.List;
 
 /**
  * @author Igor Filin
+ * modefied by: Prateek Chauhan
  */
 public class ScreenResolution {
 
